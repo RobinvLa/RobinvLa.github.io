@@ -3,6 +3,11 @@
 <head>
 <style>
 
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
     ul {
         list-style-type: none;
         margin: 0;
@@ -37,11 +42,14 @@
 
 
     table {
-    width: 40%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     }
     table, th, td {
     border: 3px solid black;
     border-collapse: collapse;
+    background-color: white;
     }
     th, td {
     padding: 15px;
@@ -52,6 +60,29 @@
     background-color: blue;
     color: white;
     }
+
+
+    .button {
+        background-color: blue;
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+
+    .button1 {border-radius: 12px;}
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
 </style>
 </head>
 
@@ -66,7 +97,6 @@
           
         <li><a href="https://robinvla.github.io./faq.html">FAQ</a></li>
       </ul>
-
 
       <br>
 
@@ -211,6 +241,45 @@
         </tr>
 
     </table>
+
+    <br>
+    <br>
+
+    <div class="center">
+        <form>
+            <input class="button button1" type="button" value="The HZ Course and Examination Regulations" onclick="window.location.href='https://hz.nl/uploads/documents/Regelingen/EN/OER-HZ-2019-2020werkdocv2018-05-17DEF_ENGELS-AC-29112019.pdf'" />
+        </form>
+    </div>
+
+    <div class="center">
+        <form>
+            <input class="button button1" type="button" value="The Learn environment" onclick="window.location.href='https://learn.hz.nl/my/'" />
+        </form>
+    </div>
+
+    <div class="center">
+        <form>
+            <input class="button button1" type="button" value="Study progress" onclick="window.location.href='https://apps.hz.nl/angular/studievoortgang/studiestatus'" />
+        </form>
+    </div>
+
+    <div class="center">
+        <form>
+            <input class="button button1" type="button" value="Implementation Regulations HBO-ICT 2019/2020" onclick="window.location.href='https://hz.nl/uploads/documents/Regelingen/NL/Uitvoeringsregeling-OER-HBO-ICT-Voltijd-2019-2020.pdf'" />
+        </form>
+    </div>
+
+    <div class="center">
+        <form>
+            <input class="button button1" type="button" value="Teams environment" onclick="window.location.href='https://teams.microsoft.com/_?culture=nl-nl&country=NL&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/Algemeen?threadId=19:2e2afa0286b04932be16cb8ad2d9d2c0@thread.skype&ctx=channel'" />
+        </form>
+    </div>
+
+    <div class="center">
+        <form>
+            <input class="button button1" type="button" value="GitHub" onclick="window.location.href='https://github.com/'" />
+        </form>
+    </div>
 
 </body>
 </html>
