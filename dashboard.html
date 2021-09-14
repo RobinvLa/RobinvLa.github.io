@@ -3,28 +3,16 @@
 <head>
 <style>
 
-    .button {
-        background-color: green;
-        border: none;
-        color: white;
-        padding: 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        }
-
-    .button1 {border-radius: 12px;}
+   /* .buttoncenter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
 
     .center {
         margin-left: auto;
         margin-right: auto;
-        /*display: flex;
-        justify-content: center;
-        align-items: center;
-        */}
+        }
 
     table {
         width:51%;
@@ -45,6 +33,49 @@
         background-color: green;
         color: white;
         }
+
+        /* dropdown button*/
+    .dropbtn {
+        background-color: green;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+    .dropdown-content a:hover {
+        background-color: lightgrey;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: lightgreen;
+    }
+
 </style>
 
     <link rel="stylesheet" href="style.css">
@@ -69,36 +100,17 @@
 
       <br>
 
-
-      <div class="center">
-        <form>
-            <input class="button button1" type="button" value="The HZ Course and Examination Regulations" onclick="window.location.href='https://hz.nl/uploads/documents/Regelingen/EN/OER-HZ-2019-2020werkdocv2018-05-17DEF_ENGELS-AC-29112019.pdf'" />
-        </form>
-
-        <form>
-            <input class="button button1" type="button" value="Study progress" onclick="window.location.href='https://apps.hz.nl/angular/studievoortgang/studiestatus'" />
-        </form>
-    </div>
-
-    <div class="center">
-        <form>
-            <input class="button button1" type="button" value="The Learn environment" onclick="window.location.href='https://learn.hz.nl/my/'" />
-        </form>
-
-        <form>
-            <input class="button button1" type="button" value="Teams environment" onclick="window.location.href='https://teams.microsoft.com/_?culture=nl-nl&country=NL&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/Algemeen?threadId=19:2e2afa0286b04932be16cb8ad2d9d2c0@thread.skype&ctx=channel'" />
-        </form>
-    </div>
-
-    <div class="center">
-        <form>
-            <input class="button button1" type="button" value="Implementation Regulations HBO-ICT 19/20" onclick="window.location.href='https://hz.nl/uploads/documents/Regelingen/NL/Uitvoeringsregeling-OER-HBO-ICT-Voltijd-2019-2020.pdf'" />
-        </form>
-
-        <form>
-            <input class="button button1" type="button" value="GitHub" onclick="window.location.href='https://github.com/'" />
-        </form>
-    </div>
+      <div class="dropdown">
+        <button class="dropbtn">Handige Links</button>
+        <div class="dropdown-content">
+          <a href="https://hz.nl/uploads/documents/Regelingen/EN/OER-HZ-2019-2020werkdocv2018-05-17DEF_ENGELS-AC-29112019.pdf">The HZ Course and Examination Regulations</a>
+          <a href="https://apps.hz.nl/angular/studievoortgang/studiestatus">Study progress</a>
+          <a href="https://learn.hz.nl/my/">The Learn environment</a>
+          <a href="https://teams.microsoft.com/_?culture=nl-nl&country=NL&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/Algemeen?threadId=19:2e2afa0286b04932be16cb8ad2d9d2c0@thread.skype&ctx=channel">Teams environment</a>
+          <a href="https://hz.nl/uploads/documents/Regelingen/NL/Uitvoeringsregeling-OER-HBO-ICT-Voltijd-2019-2020.pdf">Implementation Regulations HBO-ICT 19/20</a>
+          <a href="https://github.com/">GitHub</a>
+        </div>
+      </div>
 
     <br>    
 
