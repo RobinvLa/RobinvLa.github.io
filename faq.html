@@ -3,7 +3,7 @@
     <style>
 
       h1 {
-        background-color: green;
+        background-color: orange;
         color: white;
         padding: 8px;
         text-align: center;
@@ -12,13 +12,75 @@
 
 
       h3 {
-        background-color: green;
+        background-color: orange;
         color: white;
         padding: 8px;
         margin-right: 50%;
         text-align: center;
       }
 
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Style the header */
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* Container for flexboxes */
+      section {
+        display: -webkit-flex;
+        display: flex;
+      }
+
+      /* Style the navigation menu */
+      nav {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background: #ccc;
+        padding: 20px;
+      }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      /* Style the content */
+      article {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: #f1f1f1;
+        padding: 10px;
+      }
+
+      /* Style the footer */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+      @media (max-width: 600px) {
+        section {
+          -webkit-flex-direction: column;
+          flex-direction: column;
+        }
+      }
     </style>
 
     <head>
@@ -41,56 +103,63 @@
             <li><a href="https://robinvla.github.io./profession.html">Profession</a></li>
         </ul>
 
-          <div style="margin-left: 30px;">
+        <br>
+
+          <div style="margin-left: 30px; margin-right: 30px;">
+
               <h1>Veel gestelde vragen</h1>
 
-              <img style="float: right; width: 35%; margin-right: 5%;" src="https://blog.dell.com/uploads/2013/08/1537.dlc7765dn_5F00_1525lf_5F00_feeder_5F00_finisher_5F00_booklet-1.jpg" alt="printer">
+              <section>
+                <article>
+                  <h1>Hoe print je een document hier op de HZ?</h1>
+                  <p>
+                    Er staan op diverse punten print- en kopieermachines, beheerd door Océ Repro.
+                    Op elke verdieping is in de pantry ook een print/kopieervoorziening, waar met de HZ pas gebruik van kan worden gemaakt. 
+                    Op de begane grond is ook een repro ruimte waar de plotter staat.
+                    Voor grote printopdrachten en het inbinden van verslagen kun je als student en medewerker terecht bij de Canon Reproshop aan de Edisonweg. 
+                    Je stuurt je opdracht per e-mail naar Canon en binnen 24 uur (op werkdagen) heb je je printopdracht uitgeprint retour. Deze kun je afhalen bij de receptie.
+                  </p>
+                </article>
+      
+                <article>
+                  <h1>Wat zijn de instructies om je auto te parkeren op het HZ parkeerterrein?</h1>
+                  <p>
+                    Met ingang van 1 juni is het niet meer mogelijk om als student of medewerker gratis te parkeren in de parkeergarage Kousteensedijk. 
+                    De HZ heeft een 100 parkeerplaatsen ingericht op het terrein van de PZEM aan de Poelendaelesingel 10 te Middelburg.
+                    Toegang tot het parkeerterrein is alleen mogelijk met de HZ pas. 
+                    Na het passeren van de slagboom dient u de borden naar de HZ parkeerplaatsen te volgen. 
+                    De HZ parkeerplaatsen zijn voorzien van een wit bordje met HZ logo. Er zijn ook een aantal plaatsen beschikbaar voor het opladen van een elektrische auto. 
+                    Vanaf de parkeerplaats is het 300 meter lopen naar de locatie Het Groene Woud. 
+                  </p>
+                </article>
+              </section>
 
-            <br>
+              <section>
+                <article>
+                  <h1>Hoe scan je een document en stuur je dit naar je laptop hier op de HZ?</h1>
+                  <p>
+                    Als je dezelfde printer gebruikt en het papier scant dan zou het een yourpc toevoegen.
+                  </p>
+                </article>
+      
+                <article>
+                  <h1>Wat moet je doen als je ziek bent of symptomen van het corona virus?</h1>
+                  <p>
+                    Als je ziek bent of symptomen vertoont van het coronavirus moet je thuis blijven en jezelf ziek melden.
+                    Contacteer de docenten-helpdesk, daarna kan je de les gewoon online volgen via de stream.
+                  </p>
+                </article>
 
-              <h3>Hoe kan je een document printen vanaf je laptop op de HZ?</h3>
-
-              <p style="margin-right: 60%;">
-                Er staan op diverse punten print- en kopieermachines, beheerd door Océ Repro. <br>
-                Op elke verdieping is in de pantry ook een print/kopieervoorziening, waar met de HZ pas gebruik van kan worden gemaakt. <br>
-                Op de begane grond is ook een repro ruimte waar de plotter staat. <br>
-                Voor grote printopdrachten en het inbinden van verslagen kun je als student en medewerker terecht bij de Canon Reproshop aan de Edisonweg. <br>
-                Je stuurt je opdracht per e-mail naar Canon en binnen 24 uur (op werkdagen) heb je je printopdracht uitgeprint retour. Deze kun je afhalen bij de receptie. 
+                <article>
+                  <h1>Hoe kun je een projectruimte boeken in één van de vleugels van het gebouw?</h1>
+                  <p>
+                    Je kan een project ruimte reserveren via de Selfservice portal.
+                    Er kunnen ongeveer 6-8 mensen in een ruimte.
+                    De ruimte beschikt over een LCD scherm met een aansluiting voor je laptop, stroomvoorzieningen en een whiteboard.
               </p>
-              
-              <h3>Hoe scan je een document en stuur je het naar je laptop bij de HZ?</h3>
-
-              <p>
-                Als je dezelfde printer gebruikt en het papier scant dan zou het een yourpc toevoegen.
-              </p>
-
-              <h3>Wat moet je doen als je ziek bent/symptomen vertoont van coronavirus?</h3>
-
-              <p style="margin-right: 60%;">
-                Als je ziek bent of symptomen vertoont van het coronavirus moet je thuis blijven en jezelf ziek melden.
-                Contacteer de docenten-helpdesk, daarna kan je de les gewoon online volgen via de stream.
-              </p>
-
-              <img style="float: right; width: 35%; margin-right: 5%;" src="https://dailytophealth.com/wp-content/uploads/sites/18/2020/02/cfarmafoto1242699.jpg" alt="coronavirus">
-
-              <h3>Hoe boek je een ruimte in een van de vleugels?</h3>
-
-              <p style="margin-right: 60%;">
-                Je kan een project ruimte reserveren via de Selfservice portal.
-                Er kunnen ongeveer 6-8 mensen in een ruimte.
-                De ruimte beschikt over een LCD scherm met een aansluiting voor je laptop, stroomvoorzieningen en een whiteboard.
-              </p>
-
-              <h3>Wat zijn de instructies als u uw auto wilt parkeren op het parkeerterrein van de HZ?</h3>
-
-              <p style="margin-right: 60%;">
-                Met ingang van 1 juni is het niet meer mogelijk om als student of medewerker gratis te parkeren in de parkeergarage Kousteensedijk. 
-                De HZ heeft een 100 parkeerplaatsen ingericht op het terrein van de PZEM aan de Poelendaelesingel 10 te Middelburg.
-                Toegang tot het parkeerterrein is alleen mogelijk met de HZ pas. 
-                Na het passeren van de slagboom dient u de borden naar de HZ parkeerplaatsen te volgen. 
-                De HZ parkeerplaatsen zijn voorzien van een wit bordje met HZ logo. Er zijn ook een aantal plaatsen beschikbaar voor het opladen van een elektrische auto. 
-                Vanaf de parkeerplaats is het 300 meter lopen naar de locatie Het Groene Woud. 
-              </p>
+                  </p>
+                </article>
+              </section>
           </div>
 
     </body>
