@@ -82,10 +82,6 @@ img {
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
 </style>
     </head>
 
@@ -148,25 +144,28 @@ img {
           </div><br>
           
           <script>
-          var slideIndex = 0;
-          showSlides();
-          
-          function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 5000); // Change image every 2 seconds
-          }
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 5000); // Change image every 5 seconds
+              }
+              
           </script>
 
         <table style="margin-left: auto; margin-right: auto;" id="t01">
@@ -257,41 +256,41 @@ img {
                   </td>
                 </tr>
 
-                <table style="margin-left: auto; margin-right: auto;" id="t01">
-                    <tr>
-                      <th id="damen">
-                        DAMEN
-                      </th>
-                    </tr>
-              
-                    <tr>
-                      <td>
-                        DAMEN is een bedrijf wat zich specialiseert in het creeren van designs en bouwen van schepen, 
-                        deze schepen verschillen van oorlogsschepen naar ijsbrekers. 
-                        Ook maken ze gespecialiseerde schepen zoals Yachts, 
-                        deze schepen worden tot leven gebracht met het gebruik van VR dit kan de klant een goed inzicht geven tot hoe het schip er uit komt te zien. 
-                        Maar ook word er veel gebruik gemaakt van security, 
-                        aangezien de concurrentie graag meer te weten wilt komen over deze schepen en daarom moeten ze goed beveiligd zijn en alles wat er omheen gaat.
-                        <br><br>
-                        <img width="100%" src="https://maritimetechnology.nl/media/damen-6-800x280.jpg" alt="Zeeuws zakelijk logo">
+              <table style="margin-left: auto; margin-right: auto;" id="t01">
+                  <tr>
+                    <th id="damen">
+                      DAMEN
+                    </th>
+                  </tr>
+            
+                  <tr>
+                    <td>
+                      DAMEN is een bedrijf wat zich specialiseert in het creeren van designs en bouwen van schepen, 
+                      deze schepen verschillen van oorlogsschepen naar ijsbrekers. 
+                      Ook maken ze gespecialiseerde schepen zoals Yachts, 
+                      deze schepen worden tot leven gebracht met het gebruik van VR dit kan de klant een goed inzicht geven tot hoe het schip er uit komt te zien. 
+                      Maar ook word er veel gebruik gemaakt van security, 
+                      aangezien de concurrentie graag meer te weten wilt komen over deze schepen en daarom moeten ze goed beveiligd zijn en alles wat er omheen gaat.
+                      <br><br>
+                      <img width="100%" src="https://maritimetechnology.nl/media/damen-6-800x280.jpg" alt="Zeeuws zakelijk logo">
                         
-                        Banen binnen de ICT:
+                      Banen binnen de ICT:
                         <ol>
-                            <li>IT Business Analyst:<br>
-                                Je bent de link tussen business en IT, ook ben je verantwoordelijk voor het contact met de stakeholders.</li><br><br>
-                            <br><br>
-                            <li>Cyber security:<br>
-                              Je zorgt ervoor dat alles veilig is van mogelijke aanvallen om meer te weten te komen over de schepen en hun routes.</li><br><br>
-                            <br><br>
+                          <li>IT Business Analyst:<br>
+                              Je bent de link tussen business en IT, ook ben je verantwoordelijk voor het contact met de stakeholders.</li><br><br>
+                          <br><br>
+                          <li>Cyber security:<br>
+                            Je zorgt ervoor dat alles veilig is van mogelijke aanvallen om meer te weten te komen over de schepen en hun routes.</li><br><br>
+                          <br><br>
 
                             Verschillende technologieen waarmee ze werken:<br>
-                            <ol>
-                              <li>CAD<br>
-                                  Ze gebruiken CAD ze als hun VR software en is door hun zelf gecreeerd.</li><br><br>
-                              <br>
-                              <li>Special domains<br>
-                                  Worden gebruikt voor het maken en creeren van designs voor schepen.</li>
-                              <br>
+                          <ol>
+                            <li>CAD<br>
+                                Ze gebruiken CAD ze als hun VR software en is door hun zelf gecreeerd.</li><br><br>
+                            <br>
+                            <li>Special domains<br>
+                                Worden gebruikt voor het maken en creeren van designs voor schepen.</li>
+                            <br>
                           </ol>
                         </ol>
                       </td>
