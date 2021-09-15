@@ -82,9 +82,58 @@ img {
   to {opacity: 1}
 }
 
-</style>
-    </head>
+      /* Style the header */
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
 
+      /* Container for flexboxes */
+      section {
+        display: -webkit-flex;
+        display: flex;
+      }
+
+      /* Style the content */
+      article {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: white;
+        padding: 10px;
+      }
+
+      /* Style the footer */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      h1 {
+        background-color: orange;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        margin-right: 30px;
+      }
+
+
+      h3 {
+        background-color: orange;
+        color: white;
+        padding: 8px;
+        margin-right: 50%;
+        text-align: center;
+      }
+
+</style>
+  </head>
+  
     <body>
         <ul>
             <li><a href="https://robinvla.github.io./index.html">Home</a></li>
@@ -94,8 +143,6 @@ img {
             <li><a href="https://robinvla.github.io./dashboard.html">Dashboard</a></li>
               
             <li><a href="https://robinvla.github.io./faq.html">Frequently Asked Questions</a></li>
-    
-            <li><a href="https://robinvla.github.io./Motivation.html">My Motivation</a></li>
 
             <li><a class="active" href="https://robinvla.github.io./profession.html">Profession</a></li>
         </ul>
@@ -167,6 +214,40 @@ img {
               }
               
           </script>
+
+          <div>
+            <section>
+              <article>
+                <h1>Waarom deze studie?</h1>
+                <p>
+                  Ik heb deze studie gekozen grotendeels vanwege mijn vader, 
+                  want mijn echte passie ligt niet bij ICT maar bij geschiedenis en dieren. 
+                  De reden dat ik daar niet iets in ben gaan doen heeft te maken met het feit, 
+                  dat wat ik kan doen binnen die vakken niet aan mijn specificaties voldoen voor mijn toekomst. 
+                  Mijn vader zit zelf in IT en toen ik klein was heb ik vaak naast hem gezeten om te kijken wat hij deed. 
+                  Ik begreep er natuurlijk niks van maar het zorgde wel voor interesse, 
+                  toen ik uiteindelijk op de middelbare kwam besloot ik informatica te kiezen om te kijken hoe mij dat zou bevallen 
+                  en het beviel me erg goed en daarom besloot ik voor ICT te kiezen als vervolgopleiding. 
+                  Na het voltooien van de opleiding zou ik misschien iets willen doen met javascript of met data science, 
+                  dit zijn de onderdelen die mij het meest aanspreken.
+                </p>
+              </article>
+    
+              <article>
+                <h1>ICT beroepenveld</h1>
+                <p>
+                  Het beroepenveld in de ICT is erg uitgebreid, 
+                  ICT geeft je zo veel verschillende richtingen om je in te specialiseren. 
+                  Van beveiliging tot software engineer tot data science en nog zo veel meer. 
+                  De bedrijven die we op school hebben gezien hebben mij veel inzicht gegeven tot wat er precies allemaal mogelijk is met ICT 
+                  en hoeveel verschillende taken ze wel niet hebben voor mensen. 
+                  Ook is er veel belangstelling voor ICT’ers, er is namelijk veel vraag meer dan dat er kan worden aangeboden aan mensen die ICT doen.
+                </p>
+              </article>
+            </section>
+          </div>
+
+
 
         <table style="margin-left: auto; margin-right: auto;" id="t01">
             <tr>

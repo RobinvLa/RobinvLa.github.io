@@ -9,6 +9,71 @@
       height: 500px;
       width: 100%;
     }  
+
+    h1 {
+        background-color: orange;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        margin-right: 30px;
+      }
+
+
+      h3 {
+        background-color: orange;
+        color: white;
+        padding: 8px;
+        margin-right: 50%;
+        text-align: center;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Style the header */
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* Container for flexboxes */
+      section {
+        display: -webkit-flex;
+        display: flex;
+      }
+
+      /* Style the content */
+      article {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: white;
+        padding: 10px;
+      }
+
+      /* Style the footer */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+      @media (max-width: 600px) {
+        section {
+          -webkit-flex-direction: column;
+          flex-direction: column;
+        }
+      }
   </style>
 
   <head>
@@ -26,17 +91,32 @@
       
     <li><a href="https://robinvla.github.io./faq.html">Frequently Asked Questions</a></li>
 
-    <li><a href="https://robinvla.github.io./Motivation.html">My Motivation</a></li>
-
     <li><a href="https://robinvla.github.io./profession.html">Profession</a></li>
   </ul>
 
 
-  <img class="center"  src="https://wallpaperaccess.com/full/1578343.jpg" alt="city skyline">
+  <img class="center"  src="https://wallpaperaccess.com/full/1578343.jpg" alt="space">
 
+  
   <section>
     <article>
       <h1 style="font-family: cursive;">Waarom past HBO-ICT bij mij</h1>
+      <p>
+        De HBO-ICT opleiding past bij mij omdat ik al heelang geintereseerd ben geweest in ICT omdat mijn vader er ook mee werkt. 
+        Elke avond hoorde ik weer verhalen over mijn vader zijn werk en wat hij allemaal had gedaan, ik snapte er helemaal niks van maar ik was nog klein. 
+        Naarmate ik ouder werd begon ik me ook te interesseren in de verhalen en werd erg nieuwsgierig naar wat het allemaal was.
+        Ik besloot in de 4de informatica te kiezen en vond het erg leuk en interessant, vooral SQL vond ik erg interessant.
+      </p>
+    </article>
+  </section>
+
+  <img style="margin-left: 10px;" width="45%"  src="http://www.iconsulting.gr/wp-content/uploads/2013/06/HZ-INT-APPLIED-SCIENCE-HOR_RGB.jpg" alt="HZ logo">
+
+  <img style="margin-right: 10px;" width="45%"  src="https://image.shutterstock.com/image-vector/information-communications-technology-ict-vector-260nw-1587762088.jpg" alt="HBO-ICT">
+
+  <section>
+    <article>
+      <h1 style="font-family: cursive;">Waarom past deze opleiding bij mijn personaliteit</h1>
       <p>
         De opleiding past bij mijn personaliteit omdat ik het erg fijn vindt om met mensen samen te werken, maar ik vind het ook heel fijn om alleen te werken omdat ik dan op mijn eigen tempo kan werken.
         Ik vind he fijn om met mensen samen te werken omdat je elkaar dan kan ondersteunen en helpen met problemen die je misschien hebt.
@@ -47,54 +127,32 @@
     </article>
   </section>
 
-  <img style="float: right;margin-right: 50px;" width="40%"  src="http://www.iconsulting.gr/wp-content/uploads/2013/06/HZ-INT-APPLIED-SCIENCE-HOR_RGB.jpg" alt="HZ logo">
+  <table style="margin-left: 20%; width: 60%;" id="t01">
+    <tr>
+      <th style="text-align: center;">
+        Performance motivation
+      </th>
+    </tr>
+
+    <tr>
+      <td style="text-align: center;">
+        Je bent in <u>redelijke mate intrinsiek gemotiveerd en in redelijke mate extrinsiek gemotiveerd.</u> <br>
+        Dat je redelijk intrinsiek gemotiveerd bent betekent dat <u>je het best leuk vindt om te studeren. <br>
+        Maar heel leuk vind je het nou ook weer niet.</u> <br>
+        Dat je in redelijke mate extrinsiek gemotiveerd bent wil zeggen dat <u>je er ook rekening mee houdt wat je met je studie kunt bereiken:</u><br> 
+        een diploma, geld, status of de erkenning van de mensen waar je van houdt. Op zich is er niks mis met jouw motivatie. <br>
+        Wel zou je gelukkiger zijn als je studie wat <u>beter zou passen bij je werkelijke interesses.</u><br>
+        <br>
+        Ik ben het wel eens met wat er uit de test is gekomen.<br>
+        Volgens de test vind ik het best leuk om te studeren, maar ook weer niet en dat klopt helemaal.<br>
+        Dit is te zien bij de opdracht aan het feit dat ik graag aan mijn code werk maar geen zin heb om te controleren voor spelfouten wat een klein probleem was bij de assignment.<br> 
+        Ook zegt het dat ik voor erkenning zoek van de mensen van wie ik hou ook dat is correct, mijn vader heeft mij namelijk gellerd hoe ik goed moet presenteren.<br>
+      </td>
+    </tr>
     
-  <br>
-
-  <table style="margin-left: 15px;" id="t01">
-      <tr>
-        <th>
-          Waarom past HBO-ICT bij mij
-        </th>
-      </tr>
-
-      <tr>
-        <td>
-          De HBO-ICT opleiding past bij mij omdat ik al heelang geintereseerd ben geweest in ICT omdat mijn vader er ook mee werkt. 
-          Elke avond hoorde ik weer verhalen over mijn vader zijn werk en wat hij allemaal had gedaan, ik snapte er helemaal niks van maar ik was nog klein. 
-          Naarmate ik ouder werd begon ik me ook te interesseren in de verhalen en werd erg nieuwsgierig naar wat het allemaal was.
-           Ik besloot in de 4de informatica te kiezen en vond het erg leuk en interessant, vooral SQL vond ik erg interessant.
-          </td>
-      </tr>
-    
-  </table>
-
-      <br>
-      <br>
-      <br>
-
-      <img style="margin-left: 50px; margin-bottom: 15px;" width="35%"  src="https://www.hanze.nl/assets/instituut-voor-communicatie-media-it/PublishingImages/Public/Coverfoto/HBO-ICT_coverfoto.jpg?RenditionID=1&Width=800" alt="HBO-ICT">
-
-    <table style="float: right;margin-right: 15px; margin-top: 60px;" id="t01">
-      <tr>
-        <th>
-          Waarom past deze opleiding bij mijn personaliteit
-        </th>
-      </tr>
-
-      <tr>
-        <td>
-          De opleiding past bij mijn personaliteit omdat ik het erg fijn vindt om met mensen samen te werken, maar ik vind het ook heel fijn om alleen te werken omdat ik dan op mijn eigen tempo kan werken.
-          Ik vind he fijn om met mensen samen te werken omdat je elkaar dan kan ondersteunen en helpen met problemen die je misschien hebt.
-          Dit is erg fijn als je tegen iets oploopt wat je niet weet te fixen.
-          Alleen werken is daarentegen ook erg fijn want dan kan je jezelf gewoon focusen op je eigen ding en word je niet onderbroken door anderen die misschien een vraag hebben.
-          Mij is altijd verteld dat ik erg goed met mensen kan samenwerken omdat ik best wel sociaal ben en goed met mensen kan praten.
-        </td>
-      </tr>
-    
-    </table>
   
+</table>
 </body>
 
-  
+
 </html>
