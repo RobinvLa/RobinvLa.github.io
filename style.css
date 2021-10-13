@@ -19,19 +19,19 @@ body {
   
   li a {
     display: block;
-    color: orange;
+    color: blue;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   li a:hover:not(.active) {
-    color: blue;
+    color: lightcoral;
   }
   
   li a.active {
     color: white;
-    background-color: orange;
+    background-color: blue;
   }
 
 
@@ -52,7 +52,7 @@ body {
   }
 
   #t01 th {
-    background-color: orange;
+    background-color: blue;
     color: white;
   }
 
