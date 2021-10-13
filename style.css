@@ -65,9 +65,6 @@ body {
     margin-right: 10%;
   }
 
-
-
-
   .center {
     display: block;
     margin-left: auto;
@@ -95,10 +92,6 @@ body {
 
     * {
       box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
     }
 
     /* Style the header */
@@ -132,3 +125,150 @@ body {
       text-align: center;
       color: white;
     }
+
+/* Blog page */
+
+    * {box-sizing: border-box;}
+    
+    .mySlides {
+      display: none;
+    }
+    
+    img {
+      vertical-align: middle;
+    }
+    
+    /* Slideshow container */
+    .slideshow-container {
+      width: 100%;
+      max-height: 510px;
+      position: relative;
+      margin: auto;
+      overflow: hidden;
+    }
+    
+    /* Caption text */
+    .text {
+      color: black;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/6 etc) */
+    .numbertext {
+      color: white;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: grey;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active {
+      background-color: black;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 4s;
+      animation-name: fade;
+      animation-duration: 4s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+          a:link {
+            color: orange;
+            background-color: transparent;
+            text-decoration: none;
+          }
+    
+          a:visited {
+            color: darkorange;
+            background-color: transparent;
+            text-decoration: none;
+          }
+    
+          a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+          }
+    
+          a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+          }
+
+          /* Dashboard */
+
+          .centerTable {
+            margin-left: auto;
+            margin-right: auto;
+            }
+    
+            /* dropdown button*/
+        .dropbtn {
+            background-color: orange;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            }
+    
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            }
+    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: orange;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+    
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            }
+    
+        .dropdown-content a:hover {
+            background-color: lightcoral;
+        }
+    
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    
+        .dropdown:hover .dropbtn {
+            background-color: lightcoral;
+        }
